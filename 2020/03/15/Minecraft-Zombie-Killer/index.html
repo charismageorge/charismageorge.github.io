@@ -6,20 +6,29 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | George Zhong</title>
+  <title>Minecraft Zombie Killer | George Zhong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is a website about George Zhong!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="George Zhong">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="Minecraft: Zombie Killer Reinforcement Learning Project ReportBryant Gunaman, Rafael Tuazon, George Zhong AbstractWe present an agent learning how to survive in an area populated with zombies on the M">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Minecraft Zombie Killer">
+<meta property="og:url" content="http://yoursite.com/2020/03/15/Minecraft-Zombie-Killer/index.html">
 <meta property="og:site_name" content="George Zhong">
-<meta property="og:description" content="This is a website about George Zhong!">
+<meta property="og:description" content="Minecraft: Zombie Killer Reinforcement Learning Project ReportBryant Gunaman, Rafael Tuazon, George Zhong AbstractWe present an agent learning how to survive in an area populated with zombies on the M">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/MinecraftZombiekiller/TrainingPlots.pdf">
+<meta property="og:image" content="http://yoursite.com/images/MinecraftZombiekiller/goodCornor1.gif">
+<meta property="og:image" content="http://yoursite.com/images/MinecraftZombiekiller/goodCornor2.gif">
+<meta property="og:image" content="http://yoursite.com/images/MinecraftZombiekiller/Demo1.gif">
+<meta property="og:image" content="http://yoursite.com/images/MinecraftZombiekiller/Demo2.gif">
+<meta property="article:published_time" content="2020-03-15T07:00:00.000Z">
+<meta property="article:modified_time" content="2020-07-06T00:33:52.679Z">
 <meta property="article:author" content="George Zhong">
-<meta property="article:tag" content="Blog">
-<meta property="article:tag" content=" Skills">
-<meta property="article:tag" content=" Life">
+<meta property="article:tag" content="Report">
+<meta property="article:tag" content="Machine Learning">
+<meta property="article:tag" content="Project">
+<meta property="article:tag" content="Reinforcement Learning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/MinecraftZombiekiller/TrainingPlots.pdf">
   
     <link rel="alternative" href="/atom.xml" title="George Zhong" type="application/atom+xml">
   
@@ -163,63 +172,126 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Minecraft-Zombie-Killer" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/05/Intro/" class="archive-article-date">
-  	<time datetime="2020-07-06T00:30:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/05/Intro/">Intro</a>
+    <h1 class="article-title" itemprop="name">
+      Minecraft Zombie Killer
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/15/Minecraft-Zombie-Killer/" class="archive-article-date">
+        
+        <a href="/2020/03/15/Minecraft-Zombie-Killer/" class="archive-article-date">
   	<time datetime="2020-03-15T07:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/15/Minecraft-Zombie-Killer/">Minecraft Zombie Killer</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Minecraft-Zombie-Killer-Reinforcement-Learning-Project-Report"><a href="#Minecraft-Zombie-Killer-Reinforcement-Learning-Project-Report" class="headerlink" title="Minecraft: Zombie Killer Reinforcement Learning Project Report"></a>Minecraft: Zombie Killer Reinforcement Learning Project Report</h1><p>Bryant Gunaman, Rafael Tuazon, George Zhong</p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>We present an agent learning how to survive in an area populated with zombies on the Minecraft platform. The environment begins with an agent, equipped with a diamond sword, and one zombie all enclosed in a specified area. We integrate reinforcement learning with the following models: tabular Q-learning model and deep Q-learning (DQN). The agent’s goal is to maintain good health by killing and evading zombies as well as healing when necessary. We adjust different reward weights to optimize the behavior of our agent. </p>
+<p>So far, we have successfully implemented both the models mentioned above. Through continuous testing, we have determined that our agent can consistently kill one zombie around 10 seconds each run with the DQN model. While our current results come from a 10x10 confined area with only a zombie, future testing will include varying boundary sizes and the number of zombies. </p>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><p>Our project’s goal is to train a Minecraft agent to kill zombies and survive. The difficulty in our mission is determining the correct reward system in order for the agent to choose the best actions in all situations. We started with tabular Q-learning with the agent given a diamond sword, a single zombie, and a fixed bounded map. We achieved success with tabular Q-learning and moved on to Deep Q Network (DQN). With the DQN model, the agent is capable of killing a zombie in around 10 seconds consistently. However, the agent struggles to kill multiple zombies. The agent faces zombies head-on believing it can merely attack and kill but gets out-damaged and cornered. By using a training wheel, our agent was finally able to kill 2-3 zombies consistently without dying.</p>
+<h2 id="2-Background"><a href="#2-Background" class="headerlink" title="2 Background"></a>2 Background</h2><p>We conducted all parts of our project on macOS machines. To start, we used Microsoft’s open-source <strong>Minecraft Malmo</strong>$^{1}$. We based our project on two resources provided by Malmo. The first resource is <strong>hit_test.py</strong>$^{2}$ to calculate the turning magnitude and movement speed towards, and away from zombies. The second resource is <strong>tutorial_6.py</strong>$^{3}$, which gave an example to integrate Tabular Q Learning to Malmo environments.Then, we made a Malmo wrapper that enables us to create customized environments. Therefore, we can spawn an agent and zombies at randomized coordinates in each game. Furthermore, we received in-game observations in JSON; manually formulated a reward system, and visualized them using <strong>Tkinter</strong>$^{5}$. We then used this system when we integrated a <strong>Keras</strong>$^{4}$ based Deep Q Network wrapper to our Malmo wrapper.</p>
+<p>Other notable libraries we used were <strong>NumPy</strong>$^{6}$ for calculations in Keras and <strong>Matplotlib</strong>$^{7}$ to plot our learning curve.</p>
+<h2 id="3-Problem-Statement"><a href="#3-Problem-Statement" class="headerlink" title="3 Problem Statement"></a>3 Problem Statement</h2><h3 id="3-1-Main-Problem"><a href="#3-1-Main-Problem" class="headerlink" title="3.1 Main Problem"></a>3.1 Main Problem</h3><p>Our project aims to train a Minecraft agent to kill all zombies presented to it. We approach this problem with curriculum learning. That is, we start with a simple version of the task and gradually increase the difficulty. Translating this, we start training with a 10x10 closed area with only a single zombie and the agent equipped with a diamond sword. Then, we make the task more arduous by increasing the number of zombies and increasing the size of the boundary. The agent should actively look for zombies to kill whenever possible, and evade zombies in situations that they might die. There are some commands that the agent needs to know and use at the right times. However, merely using commands at the correct times is not enough. When fighting multiple zombies, being damaged is almost inevitable. Therefore, it is also essential that our agent is capable of healing itself.</p>
+<h3 id="3-2-Goals"><a href="#3-2-Goals" class="headerlink" title="3.2 Goals"></a>3.2 Goals</h3><p>We divided the project into three milestones. Milestone 1 consists of the agent being able to kill a zombie. We have completed Milestone 1 successfully with both our Tabular Q Learning and Deep Q Network Models. Milestone 2 consists of the agent being able to kill multiple zombies and heal itself; this is still a work in progress. Milestone 3 is an ambitious milestone which aims to train the agent to collect materials to build weapons in the day, and use the built weapons to kill zombies at night.</p>
+<h3 id="3-3-Environment"><a href="#3-3-Environment" class="headerlink" title="3.3 Environment"></a>3.3 Environment</h3><p>The environments we used to complete Milestone 1 was simple. We started with an agent and a zombie, which we spawn in random coordinates of a bounded 10x10 flat land. As mentioned, the agent has three move choices, and they are move-towards-zombies, move-away-from-zombies, and attack. We told the agent where the zombies are so that the agent can move towards and away from them.  In each move that the agent makes, depending on the algorithms used, we collect observations and calculate the respective rewards. Each iteration ends when either the agent or the zombie dies.</p>
+<h2 id="4-Method"><a href="#4-Method" class="headerlink" title="4 Method"></a>4 Method</h2><h3 id="4-1-Tabular-Q-Learning"><a href="#4-1-Tabular-Q-Learning" class="headerlink" title="4.1 Tabular Q Learning"></a>4.1 Tabular Q Learning</h3><p>In our Tabular Q Learning model, we observed the X and Z coordinates of the agent. We gave +20 rewards each time the agent damages a zombie, and -1 reward for every move it makes. In each iteration, we calculate the rewards and the total rewards to update the Q table. If there is no previous value in the table, the agent randomly chooses an action. Otherwise, actions taken are calculated from the previous values. </p>
+<h3 id="4-2-Deep-Q-Network"><a href="#4-2-Deep-Q-Network" class="headerlink" title="4.2 Deep Q Network"></a>4.2 Deep Q Network</h3><p>We made our DQN Model using a Keras wrapper with 256x256 fully connected layers. To do so, we built a Keras Sequential Model with a combination of 3 Dense Layers and 2 “ReLU” Activation functions, and the Adam optimizer with Mean Squared Error as the loss. The wrapper enables the algorithm to choose an action, remember the transitions, and learn from them. Furthermore, we can save our models and load them when needed. Overall, the agent was able to learn to kill a zombie faster when using the Deep Q Learning Model compared to the Tabular Q Learning model.</p>
+<h3 id="4-3-Training-Wheel"><a href="#4-3-Training-Wheel" class="headerlink" title="4.3 Training Wheel"></a>4.3 Training Wheel</h3><p>During our training process, we had difficulties in finding the best hyperparameters. This process will be discussed in more detail in “Experiments.” Tuning certain rewards lead to extreme behaviors by the agent. Therefore, we concluded that we could tolerate bad behaviors while slowly tuning them to good behaviors one by one. We used a Training Wheel to do this by switching on/off certain rewards to adjust the agent’s behavior depending on our observations. We completed Milestone 2 after discovering the optimal behavior.</p>
+<h2 id="5-Experiments"><a href="#5-Experiments" class="headerlink" title="5 Experiments"></a>5 Experiments</h2><p>Initially, we start with a 10x10 bounded area with the initial locations for the agent and the zombie fixed. We were able to kill the zombie with Tabular Q Learning after 50 iterations consistently. Then, we moved to DQN, where the agent learned to kill the zombie at a significantly faster rate. After 20 iterations, the agent was able to kill the zombie in about 10 seconds consistently. </p>
+<p>Carrying on with our progress, we increased the number of zombies to 2 and the bounded area to 20x20. We then started to face several challenges. Firstly, the agent behaves like it is killing a single zombie. It charged at one zombie and was killed by the other two. As a result, we added two moves: evade and heal. At this point, our training result became significantly worse. The agent was not even able to kill a single zombie. We then decided to restart our training with two zombies right away, instead of training it to kill one prior. Unsurprisingly, the results were even worse because it does not even know how to kill a single zombie. Therefore, we decided to stick with our model that was pre-trained to kill one zombie but remove evade. Training results became slightly better, but our agent kept moving to corners despite being given negative rewards doing so. The agent also heals at the wrong timings and frequently avoids zombies because it is rewarded more the longer it stays alive. It turns out that corners are good when the zombies are not horizontally lined up in front of the agent because the agent back is protected, and it can attack the zombies one by one. To fix all these unwanted behaviors, we used a training wheel and was able to make the agent behave optimally. It moves forward, backward, heal, and attack at the correct timings. Lastly, we tried our model to kill three zombies, and it successfully killed three zombies consistently.</p>
+<h2 id="6-Result"><a href="#6-Result" class="headerlink" title="6 Result"></a>6 Result</h2><p>In the end, we have a reliable Tabular Q Learning agent that is capable of killing one-three fixed placed zombies in a 10x10 bound map. For the Deep Q Network agent, it is capable of killing one-three zombies in a 20x20 bounded area with random initial positions for both the agent and zombies. It also capable of determining the best time to heal himself in order to prevent failing the mission is. We also conclude that there are two potential situations for corners: one is that when zombies are ranged in approximately a line and corner our agent, and the other situation is when zombies are spread evenly to corner our agent. In the first case, the agent can quickly fail the mission as it can no longer attack any zombies behind the first one. Nevertheless, in the second case, our agent can hit at least one zombie for each attack it makes, plus the corner is protecting the agent from being attacked on the back; therefore agent prefers this specific types of corners. After training our agent for enough iterations, it is capable of avoiding those bad corners and making use of those good corners. Furthermore, our agents can corner zombies and kill them with less time.</p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p>[1] Microsoft.\ “Microsoft/Malmo.”\ GitHub,\ 6\ Sept.\ 2019,\ github.com/microsoft/malmo.</p>
+<p>[2] Microsoft.\ “Microsoft/Malmo.”\ GitHub, github.com/microsoft/malmo/blob/master/Malmo/samples/Python_examples/hit_test.py. </p>
+<p>[3] Microsoft. “Microsoft/Malmo.” GitHub,\ github.com/microsoft/malmo/blob/master/Malmo/samples/Python_examples/tutorial_6.py.</p>
+<p>[4] “Keras: The Python Deep Learning Library.” Home - Keras Documentation, \indent \indent keras.io/.</p>
+<p>[5] “Graphical User Interfaces with Tk.” Graphical User Interfaces with Tk - Python 3.8.2 Documentation, docs.python.org/3/library/tk.html.</p>
+<p>[6] “NumPy.” NumPy, numpy.org/.</p>
+<p>[7] “Matplotlib Documentation.” Matplotlib, matplotlib.org/.</p>
+<h2 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h2><div style="text-align:center">
+
+<img src="/images/MinecraftZombiekiller/TrainingPlots.pdf">
+
+</div>
+
+<center>Figure 1: Training Plots for Epsilon, Average Score in 10 Iterations </center>
+
+<p>Figure 1 states that even though we are having some negative results for ten consecutive iterations, it is acceptable that our agent makes mistakes and gets confused in the beginning. As long as we use the training wheel assisted reinforcement learning methods carefully, the agent can still learn from such an environment and achieve our goal eventually.</p>
+<div style="text-align:center">
+
+<img src="/images/MinecraftZombiekiller/goodCornor1.gif">
+
+<img src="/images/MinecraftZombiekiller/goodCornor2.gif">
+
+</div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 2: Example of “Bad Corner”&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 3: Examole of “Good Corner”</p>
+<p>Figure 2 shows an example of a situation when the corner helps zombies to trap our agent. The blue dots are representing the zombies, and the green dot is our agent. The boundary illustrates that our agent was under attack at that moment, while it was trying to attack the zombie on the left, it got stuck there and got killed by the zombie in the end. </p>
+<p>Figure 3 shows an example of a situation when the corner helps the agent to kill zombies. This time as the zombies were spread out evenly to the agent, even though the agent was still under attacks, it can attack any zombies and also make a way out of the corner. In this case, the agent ran away from that corner and trapped those two zombies in that corner. In the end, the agent successfully killed those zombies.</p>
+<div style="text-align:center">
+<img src="/images/MinecraftZombiekiller/Demo1.gif">
+
+
+
+</div>
+
+<center>
+  Figure 4: Demo for Killing One Zombie
+</center>
+
+<div style="text-align:center">
+<img src="/images/MinecraftZombiekiller/Demo2.gif">
+</div>
+
+<center>
+  Figure 5: Demo for Killing Two Zombies
+</center>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>Thank You :)<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/Alipay.JPG">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/WechatPay.JPG">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -243,7 +315,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -256,17 +328,108 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/15/Minecraft-Zombie-Killer/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/07/05/Intro/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Intro
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -289,8 +452,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
